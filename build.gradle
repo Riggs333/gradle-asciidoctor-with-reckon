@@ -1,0 +1,28 @@
+plugins {
+    id 'java'
+    id 'application'
+    id 'org.ajoberstar.reckon' version '0.9.0'
+    id 'org.asciidoctor.jvm.convert' version '2.0.0-rc.1'
+//    id 'org.asciidoctor.jvm.pdf' version '2.0.0-rc.1'
+}
+
+repositories {
+    jcenter()
+}
+
+mainClassName = 'de.codecentric.App'
+
+asciidoctor {
+
+ //   asciidoctorj {
+ //      diagramVersion '1.5.4.1'
+ // }
+
+    //attributes 'projectversion': project.version.toString()
+}
+
+reckon {
+    scopeFromProp()
+    stageFromProp('milestone', 'rc', 'final')
+}
+

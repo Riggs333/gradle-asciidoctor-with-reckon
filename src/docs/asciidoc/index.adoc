@@ -1,0 +1,9 @@
+= My Application 
+{projectversion}, My Company 
+:toc:
+:toclevels: 4
+:toc: left
+
+== Technology Stack
+
+foobar
